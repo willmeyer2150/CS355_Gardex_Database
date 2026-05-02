@@ -3,8 +3,8 @@ include "db.php";
 
 $gardex_tables = [
     "plants",
+    "users",
     "garden",
-    "garden_plant",
     "climate_area",
     "soil_type",
     "resources",
@@ -12,7 +12,7 @@ $gardex_tables = [
     "supplier",
     "supplier_material",
     "user_supplier",
-    "users",
+    "garden_plant",
     "plant_climate",
     "plant_material",
     "plant_resources",
