@@ -1,5 +1,11 @@
+# sensitive config
 db.php
+
+# OS
 .DS_Store
+
+# logs
 *.log
 
-/sql
+# SQL files/folder
+sql/
