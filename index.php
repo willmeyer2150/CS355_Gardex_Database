@@ -108,6 +108,21 @@ SELECT * FROM plant_edibility_view;
         "explanation" => "Shows a readable Yes/No label instead of raw 1/0 edibility values."
     ],
 
+    "advanced_resource_schedule" => [
+    "title" => "Advanced Query: Plant Resource Schedule",
+    "sql" => "
+SELECT p.common_name,
+       r.resource_name,
+       pr.amount_required,
+       pr.unit,
+       pr.frequency
+FROM plants p
+JOIN plant_resources pr ON p.plant_id = pr.plant_id
+JOIN resources r ON pr.resource_id = r.resource_id;
+    ",
+    "explanation" => "Shows each plant’s required resources along with amount, unit, and frequency (e.g., water per week, sunlight per day)."
+],
+
     "view_safety" => [
         "title" => "View: Plant Safety View",
         "sql" => "
