@@ -84,6 +84,22 @@ WHERE p.water_req = 'low';
         "explanation" => "Connects plants, materials, and suppliers to support drought-resistant gardening."
     ],
 
+    // ========================================
+    // NEW QUERY 
+    // ========================================
+    "advanced_resources" => [
+        "title" => "Advanced Query: Plant Resource Summary",
+        "sql" => "
+SELECT p.common_name,
+       GROUP_CONCAT(r.resource_name SEPARATOR ', ') AS required_resources
+FROM plants p
+JOIN plant_resources pr ON p.plant_id = pr.plant_id
+JOIN resources r ON pr.resource_id = r.resource_id
+GROUP BY p.common_name;
+        ",
+        "explanation" => "Uses GROUP_CONCAT to combine all required resources for each plant into a single readable list."
+    ],
+
     "view_edibility" => [
         "title" => "View: Plant Edibility View",
         "sql" => "
