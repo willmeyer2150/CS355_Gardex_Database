@@ -190,6 +190,11 @@ if ($demo && !array_key_exists($demo, $demo_queries) && $demo !== "trigger") {
 
 <h1>Gardex Database Dashboard</h1>
 
+<p>
+    <a href="index.php" style="padding:8px 12px; background:#2f5d3a; color:white; border-radius:5px;">
+        ← Home
+    </a>
+</p>
 
 <!-- ======================================== -->
 <!-- ENTITY TABLE LIST -->
