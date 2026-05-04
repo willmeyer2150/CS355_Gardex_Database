@@ -289,6 +289,11 @@ if ($table) {
     }
 
     echo "</table>";
+    echo "<p>
+    <a href='index.php' style='padding:8px 12px; background:#2f5d3a; color:white; border-radius:5px;'>
+        ← Home
+    </a>
+</p>";
 }
 ?>
 
@@ -323,6 +328,12 @@ if ($demo && $demo !== "trigger") {
     }
 
     echo "</table>";
+
+    echo "<p>
+    <a href='index.php' style='padding:8px 12px; background:#2f5d3a; color:white; border-radius:5px;'>
+        ← Home
+    </a>
+</p>";
 }
 ?>
 
