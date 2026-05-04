@@ -212,7 +212,7 @@ if ($demo && !array_key_exists($demo, $demo_queries) && $demo !== "trigger") {
 <ul>
 <?php
 foreach ($entity_tables as $t) {
-    echo "<li><a href='?table=$t'>" . htmlspecialchars($t) . "</a></li>";
+    echo "<li><a href='?table=$t#results'>" . htmlspecialchars($t) . "</a></li>";
 }
 ?>
 </ul>
@@ -226,7 +226,7 @@ foreach ($entity_tables as $t) {
 <ul>
 <?php
 foreach ($junction_tables as $t) {
-    echo "<li><a href='?table=$t'>" . htmlspecialchars($t) . "</a></li>";
+    echo "<li><a href='?table=$t#results'>" . htmlspecialchars($t) . "</a></li>";
 }
 ?>
 </ul>
@@ -267,7 +267,7 @@ WHERE common_name = 'Tomato';
 
 <?php
 if ($table) {
-    echo "<h2>Viewing Table: " . htmlspecialchars($table) . "</h2>";
+    echo "<h2 id='results'>Viewing Table: " . htmlspecialchars($table) . "</h2>";
 
     $result = $conn->query("SELECT * FROM `$table` LIMIT 50");
 
@@ -359,17 +359,6 @@ WHERE common_name = 'Tomato';
 // ========================================
 $conn->close();
 ?>
-
-<script>
-window.onload = function() {
-    if (window.location.hash === "#results") {
-        const el = document.getElementById("results");
-        if (el) {
-            el.scrollIntoView();
-        }
-    }
-};
-</script>
 
 </body>
 </html>
