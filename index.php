@@ -344,7 +344,7 @@ if ($demo && $demo !== "trigger") {
 
 <?php
 if ($demo === "trigger") {
-    echo "<h2>Trigger Demo: Plant Safety Rule</h2>";
+    echo "<h2 id='results'>Trigger Demo: Plant Safety Rule</h2>";
 
     echo "<pre>";
     echo htmlspecialchars("
