@@ -431,17 +431,17 @@ WHERE common_name = 'Tomato';
         <h2 class="image-panel-title">System Visualization</h2>
 
         <div class="image-block">
-            <img src="images/Home%20Garden.jpeg" alt="Home garden design">
+            <img src="images/Home_Garden.jpeg" alt="Home garden design">
             <div class="caption">Garden design outcome</div>
         </div>
 
         <div class="image-block">
-            <img src="images/Fresh%20Plants.jpeg" alt="Fresh plants growing in rows">
+            <img src="images/Fresh_Plants.jpeg" alt="Fresh plants growing in rows">
             <div class="caption">Plant arrangement and growth</div>
         </div>
 
         <div class="image-block">
-            <img src="images/Patio%20Garden.jpeg" alt="Patio garden irrigation system">
+            <img src="images/Patio_Garden.jpeg" alt="Patio garden irrigation system">
             <div class="caption">Resource management</div>
         </div>
 
