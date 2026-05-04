@@ -251,7 +251,7 @@ foreach ($demo_queries as $key => $query_info) {
 
 <div class="demo-box">
     <h3>Trigger Demo: Plant Safety Rule</h3>
-    <p><a href="?demo=trigger">Show Trigger Test</a></p>
+    <p><a href="?demo=trigger#results">Show Trigger Test</a></p>
     <pre>
 UPDATE plants
 SET edibility = 1, toxicity = 1
