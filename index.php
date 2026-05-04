@@ -360,5 +360,16 @@ WHERE common_name = 'Tomato';
 $conn->close();
 ?>
 
+<script>
+window.onload = function() {
+    if (window.location.hash === "#results") {
+        const el = document.getElementById("results");
+        if (el) {
+            el.scrollIntoView();
+        }
+    }
+};
+</script>
+
 </body>
 </html>
