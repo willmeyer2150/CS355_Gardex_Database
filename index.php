@@ -242,7 +242,7 @@ foreach ($junction_tables as $t) {
 foreach ($demo_queries as $key => $query_info) {
     echo "<div class='demo-box'>";
     echo "<h3>" . htmlspecialchars($query_info["title"]) . "</h3>";
-    echo "<p><a href='?demo=$key'>Run Query</a></p>";
+    echo "<p><a href='?demo=$key#results'>Run Query</a></p>";
     echo "<pre>" . htmlspecialchars(trim($query_info["sql"])) . "</pre>";
     echo "<p><strong>Explanation:</strong> " . htmlspecialchars($query_info["explanation"]) . "</p>";
     echo "</div>";
@@ -301,7 +301,7 @@ if ($table) {
 if ($demo && $demo !== "trigger") {
     $query_info = $demo_queries[$demo];
 
-    echo "<h2>Demo Result: " . htmlspecialchars($query_info["title"]) . "</h2>";
+    echo "<h2 id='results'>Demo Result: " . htmlspecialchars($query_info["title"]) . "</h2>";
 
     $result = $conn->query($query_info["sql"]);
 
